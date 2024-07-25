@@ -21,6 +21,7 @@ h2 {
     font-size: 3em;
     text-transform: uppercase;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 h3 {
@@ -30,7 +31,7 @@ h3 {
     margin-top: 0.3em;
 }
 
-p , dl {
+p , dl, ol {
     font-size: 2em;
 }
 
@@ -42,9 +43,31 @@ dt,dd {
     display: inline-block;
 }
 
+ol {
+    /* padding-left: 36px; */
+    list-style-position: inside;
+    list-style-type: none ;
+    counter-reset: number;
+
+}
+
+ol li::before {
+    content: 'шаг' counter(number);
+    counter-increment: number;
+    font-weight: bold;
+}
+
+ol p {
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 20px;
+    max-width: calc(100% - 460px);
+    vertical-align: top;
+}
+
 .container {
     width: 1140px;
-    margin: auto;
+    margin: 0 auto 100px;
 
 }
 
@@ -52,4 +75,10 @@ dt,dd {
     text-align: justify;
     font-size: 2em;
     margin: 2em 0;
+}
+
+.step-img {
+    max-width: 400px;
+    float: right;
+    vertical-align: middle;
 }
