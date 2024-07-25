@@ -1,0 +1,55 @@
+/* css reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;   
+}
+
+h1 {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position:  center center; 
+    /* height: 500px; */
+    text-align: center;
+    font-size: 8em;
+    line-height: 500px;
+    color:bisque;
+    text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+
+p , dl {
+    font-size: 2em;
+}
+
+dt {
+    text-decoration: underline ;
+}
+
+dt,dd {
+    display: inline-block;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+
+}
+
+.desc {
+    text-align: justify;
+    font-size: 2em;
+    margin: 2em 0;
+}
